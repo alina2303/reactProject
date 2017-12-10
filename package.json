@@ -1,0 +1,33 @@
+{
+  "name": "project",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Alina, Matus",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "startnow": "micro"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "mdbreact": "^4.0.0",
+    "micro": "latest",
+    "next": "latest",
+    "next-routes": "^1.0.17",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.2",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-plugin-wrap-in-js": "^1.1.1",
+    "glob": "^7.1.2",
+    "node-sass": "^4.7.2",
+    "normalize.css": "^7.0.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-loader": "^2.0.9",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.6"
+  }
+}
