@@ -14,7 +14,7 @@ export default class Footer extends React.Component {
                     background-color: #0A1829;
                 }
                 p{
-                    color: white;
+                    color: pink;
                     text-align: center;
                 }
                 `}</style>
