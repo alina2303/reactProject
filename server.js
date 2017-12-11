@@ -15,3 +15,39 @@ app.prepare()
     console.log(`> Ready on http://localhost:${port}`)
   })
 })
+
+////
+//// DATABASE CONNECTION
+////
+
+const co = require('co')
+const { MongoClient } = require('mongodb')
+const api = require('./lib/api')
+const express = require('express')
+const body = require('body-parser')
+
+co(function * () {
+  // Initialize the Next.js app
+  yield app.prepare()
+
+  console.log(`Connecting to ${'mongodb://localhost:27017/project'}`)
+  const db = yield MongoClient.connect('mongodb://localhost:27017/project')
+
+  // Configure express to expose a REST API
+  const server = express()
+  server.use(body.json())
+  server.use((req, res, next) => {
+    // Also expose the MongoDB database handle so Next.js can access it.
+    req.db = db
+    next()
+  })
+  server.use('/api', api(db))
+
+  // Everything that isn't '/api' gets passed along to Next.js
+  server.get('*', (req, res) => {
+    return handler(req, res)
+  }) 
+  
+  server.listen(300)
+  console.log(`Listening on ${3000}`)
+}).catch(error => console.error(error.stack))

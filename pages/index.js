@@ -1,13 +1,22 @@
 import { Link, Router } from '../routes'
-import Home from '../components/Home/Home'
+import HomeModule from './home'
 import Tracker from '../components/Tracker/Tracker'
 import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
+
 
 export default () => (
-  <div>  
+  <div className="header">  
   <Link route='home' params={{ slug: 'home' }}><a>Home | </a></Link>
   <Link route='tracker' params={{ slug: 'tracker' }}><a>Tracker | </a></Link>
   <Link route='wishes' params={{ slug: 'wishes' }}><a>Wishes</a></Link>
+  <style jsx>{`
+    .header{
+      background-color: #0A1829;
+      color: white;
+      text-align: center;
+    }
+  `}</style>
   </div>
   /*
   <ul>
