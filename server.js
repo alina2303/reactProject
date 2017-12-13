@@ -49,5 +49,5 @@ co(function * () {
   }) 
   
   server.listen(300)
-  console.log(`Listening on ${3000}`)
+  console.log(`Listening on ${port}`)
 }).catch(error => console.error(error.stack))
