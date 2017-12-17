@@ -6,6 +6,8 @@ const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handler = routes.getRequestHandler(app)
+const handle = app.getRequestHandler()
+
 
 app.prepare()
 .then(() => {
@@ -22,7 +24,7 @@ app.prepare()
 
 const co = require('co')
 const { MongoClient } = require('mongodb')
-const api = require('./lib/api')
+const api = require('./static/api')
 const express = require('express')
 const body = require('body-parser')
 
@@ -41,13 +43,13 @@ co(function * () {
     req.db = db
     next()
   })
-  server.use('/api', api(db))
+  server.use('./static/api', api(db))
 
   // Everything that isn't '/api' gets passed along to Next.js
   server.get('*', (req, res) => {
-    return handler(req, res)
+    return handle(req, res)
   }) 
   
-  server.listen(300)
+  server.listen(3000)
   console.log(`Listening on ${port}`)
 }).catch(error => console.error(error.stack))

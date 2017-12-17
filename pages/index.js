@@ -15,7 +15,9 @@ export default () => (
   </Head>
   <Link route='home' params={{ slug: 'home' }}><a>Home | </a></Link>
   <Link route='tracker' params={{ slug: 'tracker' }}><a>Tracker | </a></Link>
-  <Link route='wishes' params={{ slug: 'wishes' }}><a>Wishes</a></Link>
+  <Link route='wishes' params={{ slug: 'wishes' }}><a>Wishes | </a></Link>
+  <Link route='tr' params={{ slug: 'tr' }}><a>Test</a></Link>
+
   <style jsx>{`
     .header{
       background-color: #0A1829;
