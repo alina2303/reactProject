@@ -9,14 +9,22 @@ export default class Header extends React.Component{
             <Link route='home' params={{ slug: 'home' }}><a>Home | </a></Link>
             <Link route='tracker' params={{ slug: 'tracker' }}><a>Tracker | </a></Link>
             <Link route='wishes' params={{ slug: 'wishes' }}><a>Wishes</a></Link>
-            <p>---------</p>
             <style jsx>{`
                 .header{
                     background-color: #0A1829;
-                    text-align: center;
+                    padding: 20px;
+                    
                 }
+               
                 a, p{
                     color: white;
+                    textDecoration: none;
+                
+                }
+                .header a {
+            
+                    textDecoration: none;
+                
                 }
             `}</style>
             </div>

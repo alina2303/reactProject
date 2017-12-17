@@ -13,9 +13,7 @@ export default () => (
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
   </Head>
-  <Link route='home' params={{ slug: 'home' }}><a>Home | </a></Link>
-  <Link route='tracker' params={{ slug: 'tracker' }}><a>Tracker | </a></Link>
-  <Link route='wishes' params={{ slug: 'wishes' }}><a>Wishes</a></Link>
+ 
   <style jsx>{`
     .header{
       background-color: #0A1829;
