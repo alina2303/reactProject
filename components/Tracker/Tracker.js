@@ -4,7 +4,8 @@ import Head from 'next/head'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import * as superagent from 'superagent'
-import {DateRangePicker} from 'react-dates'  
+import {DateRangePicker} from 'react-dates' 
+
 //import som from '../../static/css'
 
 class Tracker extends React.Component{
