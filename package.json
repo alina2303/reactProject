@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "startnow": "micro"
+    "start": "micro"
   },
   "dependencies": {
     "archetype-js": "^0.6.1",
@@ -19,7 +18,8 @@
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.2.1",
     "mdbreact": "^4.0.0",
-    "micro": "latest",
+    "micro": "^9.0.2",
+    "moment": "^2.20.0",
     "mongodb": "^3.0.0-rc0",
     "mongodb-next": "^0.8.0",
     "mongoose": "^4.13.6",
@@ -28,8 +28,9 @@
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-daterange-picker": "^1.1.0",
-    "react-dates": "^16.0.1",
     "react-dom": "^16.0.0",
+    "react-input-moment": "^1.7.5",
+    "react-time-input": "^0.0.17",
     "superagent": "^3.8.2"
   },
   "devDependencies": {

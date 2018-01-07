@@ -7,9 +7,9 @@ export default class Footer extends React.Component {
     render(){
         return(
             <div className="footer col-sm-12">
-                <p>---------</p>
-                <p>Footer</p>
-                <p>---------</p>
+            <br />
+                <p>Copyright</p>
+                <br />
                 <style jsx>{`
                 .footer{
                     background-color: #588E95;

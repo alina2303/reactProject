@@ -50,6 +50,6 @@ co(function * () {
     return handle(req, res)
   }) 
   
-  server.listen(3000)
+  server.listen(port)
   console.log(`Listening on ${port}`)
 }).catch(error => console.error(error.stack))

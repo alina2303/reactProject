@@ -31,5 +31,14 @@ input{
 }
 
 .input-group{
+    width: 30%;
+}
+
+.time{
     width: 20%;
+
+}
+
+.calendar{
+    text-align: center;
 }
