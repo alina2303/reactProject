@@ -7,6 +7,7 @@ import * as superagent from 'superagent'
 import { SingleDatePicker } from 'react-dates'  
 import Moment from 'moment'
 import TimeInput from 'react-time-input'
+import { isInclusivelyBeforeDay } from 'react-dates';
 //import som from '../../static/css'
 
 class Tracker extends React.Component{
@@ -53,6 +54,7 @@ class Tracker extends React.Component{
   }
 
   balance(){
+    this.startingBalance();
     var startBalance = this.state.currentBalance;
     var value1 = 0;
     if(startBalance == 0 || startBalance == null){
@@ -60,17 +62,16 @@ class Tracker extends React.Component{
     }
     var cb = value1 + this.earnPerSecond()
     this.setState({ currentBalance: cb});
-    this.startingBalance();
 
   }
 
   earnPerSecond(){ 
-    var value = Moment(this.state.endHour, 'HH:mm:ss').diff(Moment(this.state.startHour, "HH:mm:ss"), 'seconds', true);
-    var earnSecond = this.state.Rate / value; 
+    var earnSecond = this.state.Rate / 3600; 
     return earnSecond;
   }
 
   startingBalance(){
+    var result = 0;
     var now = Moment().format("YYYY-MM-DD HH:mm:ss")
     var daydiff = Moment(now).diff(Moment(this.state.startDate).format("YYYY-MM-DD HH:mm:ss"), 'days');
     var hoursdiff = Moment(this.state.endHour, 'HH:mm:ss').diff(Moment(this.state.startHour, "HH:mm:ss"), 'hours', true);
@@ -79,8 +80,11 @@ class Tracker extends React.Component{
     var beforeShift = Moment().diff(Moment(this.state.startHour, "HH:mm:ss"), 'seconds', true);
     var afterShift = Moment().diff(Moment(this.state.endHour, "HH:mm:ss"), 'seconds', true);
 
-    if(afterShift <= 0 && beforeShift >= 0){
-      var result = daydiff * hoursdiff * this.state.Rate + (daydifftoday * this.earnPerSecond())
+    if(afterShift <= 0 && beforeShift >= 0 && daydiff != 0){
+      var result = daydiff * (hoursdiff * this.state.Rate) + (daydifftoday * this.earnPerSecond())
+    }
+    else if(afterShift <= 0 && beforeShift >= 0 && daydiff == 0){
+      var result = daydifftoday * this.earnPerSecond()
     }
     else if(afterShift >= 0){
       var result = (daydiff +1) * hoursdiff * this.state.Rate
@@ -172,7 +176,8 @@ render(){
   onDateChange={startDate => this.setState({ startDate })} // PropTypes.func.isRequired
   focused={this.state.focused} // PropTypes.bool
   onFocusChange={({ focused }) => this.setState({ focused })} // PropTypes.func.isRequired
-  isOutsideRange={() => false}
+  //isOutsideRange={() => false}
+  isOutsideRange={day => !isInclusivelyBeforeDay(day, Moment())}
   placeholder= { "Date" }
 />
   </div>
