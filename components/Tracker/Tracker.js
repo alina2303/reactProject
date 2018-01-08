@@ -220,7 +220,6 @@ render(){
     <div className="col-sm-6 ">
     <div className="border">
     <p className="wishes">Top Wishes </p>
-
     </div>
     </div>
     </div>
