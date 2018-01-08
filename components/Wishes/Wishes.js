@@ -166,7 +166,8 @@ export default class Wishes extends React.Component{
         return(
           <div id="body">
             <Head>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossOrigin="anonymous"/>
+            <link rel="stylesheet" href="../../static/css/wishes.css" />
             </Head>
             <Header />
             <div className="content-holder">
@@ -213,125 +214,6 @@ export default class Wishes extends React.Component{
                 
                 </div>
                <Footer />
-               <style>{`
-                  #body { 
-                    background-color: #e6e6e6;
-                    background: url('../../static/backgrounds/img/money.jpg');
-                    background-size:cover;
-                    background-position: center; 
-                  }
-                  #container { 
-                    background-color: #fff;
-                    margin: 20px;
-                  }
-                  .content-holder {
-                    min-height: 80vh; 
-                  }
-
-                  .mdl {
-                    position: fixed;
-                    height: 100%;
-                    width: 100%;
-                    top: 0;
-                    left: 0;
-                    background: #0e01018c;
-                    z-index: 10;
-                  }
-
-                  .mdl-inner {
-                    position: absolute;
-                    top: 100px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    padding: 10px;
-                    background: white;
-                    width: 30rem;
-                    -webkit-box-shadow: -1px 4px 26px -4px rgba(0,0,0,0.75);
-                    -moz-box-shadow: -1px 4px 26px -4px rgba(0,0,0,0.75);
-                    box-shadow: -1px 4px 26px -4px rgba(0,0,0,0.75);
-                  }
-                  
-                  .content-holder {
-                    padding: 30px;
-                  }
-
-                  h1 {
-                    font-family: Comic Sans MS;
-                    color: #003333;
-                  }
-                  h2 {
-                    font-family: font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-                    color: #003333;
-                    font-size: 25px;
-                  }
-
-                  .close-btn {
-                      position: absolute;
-                      top: 10px;
-                      right: 10px;
-                      font-size: 15px;
-                  }
-                  .add-btn {
-                    background: #3498db;
-                    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-                    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-                    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-                    background-image: -o-linear-gradient(top, #3498db, #2980b9);
-                    background-image: linear-gradient(to bottom, #3498db, #2980b9);
-                    -webkit-border-radius: 11;
-                    -moz-border-radius: 11;
-                    border-radius: 11px;
-                    font-family: Arial;
-                    color: #ffffff;
-                    font-size: 15px;
-                    padding: 10px 20px 10px 20px;
-                    text-decoration: none;
-                    margin-top: 20px;
-                  }
-                  
-                  .add-btn:hover {
-                    background: #3cb0fd;
-                    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-                    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-                    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-                    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-                    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-                    text-decoration: none;
-                  }
-                  input {
-                    font-size: 15px;
-                    margin-right: 5px;
-
-                  }
-                  .add-btn.sm  {
-                    padding: 4px 10px 4px 10px;
-                    border-radius: 5px;
-
-                  }
-                  .sb-card {
-                    margin-bottom: 30px;
-                    border: 1px solid #ededed;
-                    border-bottom: 3px solid #ededed;
-                    background: #f5f5f5;
-                }
-                    .card {
-                      position: relative;
-                      display: flex;
-                      flex-direction: column;
-                      min-width: 0;
-                      word-wrap: break-word;
-                      background-color: #fff;
-                      background-clip: border-box;
-                      border: 1px solid rgba(0,0,0,0.125);
-                      border-radius: .25rem;
-                  }
-                  .card-img-top {
-                    width:100%;
-                  }
-                  span {
-                    padding-left: 7px;
-                  }
-            `}</style>
                </div>
         )
                
