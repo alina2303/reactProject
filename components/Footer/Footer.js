@@ -16,11 +16,14 @@ export default class Footer extends React.Component {
                     padding: 10px 0px 10px 0px;
                     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
                     font-size: 13px;
+                    position: absolute;
+                    bottom: 0;
                 }
                 p{
                     color: #fff;
                     text-align: center;
                 }
+                
                 `}</style>
             </div>
         );

@@ -9,14 +9,14 @@ export default class Header extends React.Component{
             <Link route='home' params={{ slug: 'home' }}><a>Home  </a></Link>
             <Link route='tracker' params={{ slug: 'tracker' }}><a>Tracker  </a></Link>
             <Link route='wishes' params={{ slug: 'wishes' }}><a>Wishes</a></Link>
-            <style jsx>{`
+            <style >{`
                 .header{
                     background-color: #588E95;
                     text-align: left;
                     padding: 20px 0px 20px 0px;
                     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
                 }
-                a, p{
+                a {
                     color: white;
                 }
                 .header a {
@@ -27,6 +27,7 @@ export default class Header extends React.Component{
                 }
                 .header a:hover {
                    background-color: #006666;
+                   color: #000;
 
                 }
                 
