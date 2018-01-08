@@ -2,7 +2,11 @@
 
 body{
     background: rgba(204, 217, 206, 0.1);
-    font-family: 'Barlow', sans-serif;    
+    font-family: 'Barlow', sans-serif;   
+    background: url('../../static/backgrounds/img/money.jpg');
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;   
 }
 
 .col-sm-6{
@@ -14,6 +18,7 @@ body{
     border: 1px solid black;
     border-radius: 5px; 
     padding: 2%;
+    background-color: #fff;
 }
 .wishes{
     text-align: center;
@@ -42,3 +47,9 @@ input{
 .calendar{
     text-align: center;
 }
+.card img {
+    width:100%;
+  }
+ .container-fluid {
+    min-height: 78vh;
+ }

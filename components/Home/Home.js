@@ -9,7 +9,7 @@ export default class Home extends React.Component{
         return(
             <div id="body">
              <Head>
-             
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossOrigin="anonymous"/>
             </Head>
             <Header />
                 <div className="content-holder">
@@ -25,19 +25,18 @@ export default class Home extends React.Component{
                     </div>
                 </div>
             <Footer />
-            <style jsx>{`
-                  #body { 
-                    background-color: #e6e6e6;
-                    background: url('../../static/backgrounds/img/money.jpg');
-                    background-size:cover;
-                    background-position: center; 
-                  }
+            <style>{`
                   #container { 
                     background-color: #fff;
                     margin: 20px;
                   }
                   .content-holder {
-                    min-height: 80vh; 
+                    min-height: 95vh;
+                    background-color: #e6e6e6;
+                    background: url('../../static/backgrounds/img/money.jpg');
+                    background-size:cover;
+                    background-position: center;
+                    background-attachment: fixed;   
                   }
                   .content-holder {
                     padding: 30px;
@@ -51,68 +50,38 @@ export default class Home extends React.Component{
                     font-size: 30px;
                     font-style: normal;
                   }
-                  .holder{
+                  .holder h3{
                     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
                     position: absolute;
                     padding-right: 50px;
                     left: 50%;
                     text-align: right;
-                    font-size: 17px;
+                    font-size: 20px;
                     color: #f2e6d9;
+                    top: 100px;
                   }
-                  .holder-part {
+                  .holder-part h4 {
                     font-size: 20px;
                     color: #f2e6d9;
                     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
                     padding-right: 50px;
                     position: absolute;
                     left: 50%;
-                    top: 410px;
+                    top: 370px;
+                    text-align: right;
+                    
+                }
+                h3, h4 {
+                    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                    position: absolute;
+                    padding-right: 50px;
+                    left: 50%;
                     text-align: right;
                 }
 
-                  .close-btn {
-                      position: absolute;
-                      top: 10px;
-                      right: 10px;
-                      font-size: 15px;
-                  }
-                  .add-btn {
-                    background: #3498db;
-                    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-                    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-                    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-                    background-image: -o-linear-gradient(top, #3498db, #2980b9);
-                    background-image: linear-gradient(to bottom, #3498db, #2980b9);
-                    -webkit-border-radius: 11;
-                    -moz-border-radius: 11;
-                    border-radius: 11px;
-                    font-family: Arial;
-                    color: #ffffff;
-                    font-size: 15px;
-                    padding: 10px 20px 10px 20px;
-                    text-decoration: none;
-                  }
                   
-                  .add-btn:hover {
-                    background: #3cb0fd;
-                    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-                    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-                    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-                    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-                    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-                    text-decoration: none;
-                  }
-                  input {
-                    font-size: 15px;
-                    margin-right: 5px;
-
-                  }
-                  .add-btn.sm  {
-                    padding: 4px 10px 4px 10px;
-                    border-radius: 5px;
-
-                  }
+                  
+                  
             `}</style>
                
             </div>

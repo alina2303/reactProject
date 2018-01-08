@@ -220,12 +220,37 @@ render(){
     <div className="col-sm-6 ">
     <div className="border">
     <p className="wishes">Top Wishes </p>
+      <div className="container">
+        <div className="row">
+
+          <div className="col-md-12">
+              <div className="card sb-card">
+                    <a className="sb-img">
+                      <img className="card-img-top" src='https://burst.shopifycdn.com/photos/snow-boarder-on-snowy-mountain_373x@2x.jpg' alt="My wish"/>
+                    </a>
+                    <div className="card-body download-links">
+                      <ul className="list-inline m-0">
+                        <li className="list-inline-item">
+                          <span>
+                            Snowboard equip
+                          </span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span>
+                            €800
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+        </div>
+      </div>
 
     </div>
     </div>
     </div>
-    <div className="row">
-    </div>
+  
     </div>
     <Footer />         
     </div>
