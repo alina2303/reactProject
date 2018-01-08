@@ -47,6 +47,8 @@
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     color: #fff;
     font-size: 25px;
+    text-align: center;
+    margin-bottom: 35px;
   }
 
   .close-btn {
