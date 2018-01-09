@@ -162,7 +162,7 @@ render(){
     <div className="col-sm-6">
     <form onSubmit={this.add()} className="border">
     <div className="calendar">
-    <label>Date: </label>
+    <label>Start date: </label>
     <br />
     {/*<DateRangePicker
     startDate={this.state.startDate} // momentPropTypes.momentObj or null,
@@ -182,37 +182,39 @@ render(){
 />
   </div>
     <br />
-    <label>Start hour: </label> 
+    <label>Start of shift: </label> 
     <br />
     <TimeInput
    			ref="TimeInputWrapper"
    			className='form-control time'
-   			onTimeChange={this.onStartTimeChangeHandler}
+         onTimeChange={this.onStartTimeChangeHandler}
+         placeholder={"08:00"}
    		/>
     <br />
 
-    <label>End hour: </label> 
+    <label>End of shift: </label> 
     <br />
     <TimeInput
    			ref="TimeInputWrapper"
    			className='form-control time'
-   			onTimeChange={this.onEndTimeChangeHandler}
+         onTimeChange={this.onEndTimeChangeHandler}
+         placeholder={"16:00"}
    		/>
    
     {/*
     <input type="number" onChange={e => this.setState({Rate: e.target.value})} placeholder="Rate" />
     */}
     <br />
-    <label>Rate: </label>
+    <label>Hourly wage: </label>
     <div className="input-group">
     <span className="input-group-addon">€</span>
-    <input type="text" className="form-control" onChange={this.handleRateChange} placeholder="Rate" />
+    <input type="text" className="form-control" onChange={this.handleRateChange} placeholder="12.50" />
     </div>
     <br />
     <label>Current balance: </label>
     <div className="input-group">
     <span className="input-group-addon">€</span>
-    <input type="text" readOnly className="form-control" value={parseFloat(Math.round(this.state.earnings * 1000) / 1000).toFixed(4)} />
+    <input type="number" readOnly className="form-control" value={parseFloat(Math.round(this.state.earnings * 1000) / 1000).toFixed(4)} />
     </div>
     <br />
     </form>
@@ -230,13 +232,13 @@ render(){
                     </a>
                     <div className="card-body download-links">
                       <ul className="list-inline m-0">
-                        <li className="list-inline-item">
+                        <li className="list-inline-item name">
                           <span>
                             Snowboard equip
                           </span>
                         </li>
-                        <li className="list-inline-item">
-                          <span>
+                        <li className="list-inline-item price" >
+                          <span >
                             €800
                           </span>
                         </li>

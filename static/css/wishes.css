@@ -117,3 +117,12 @@
   span {
     padding-left: 7px;
   }
+
+  .foot{
+      position: relative;
+  }
+
+  .price{
+      float: right;
+      color: green;
+  }

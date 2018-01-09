@@ -83,7 +83,7 @@ export default class Wishes extends React.Component{
                           {item.title}
                         </span>
                       </li>
-                      <li className="list-inline-item">
+                      <li className="list-inline-item price">
                         <span>
                           {item.price}
                         </span>
@@ -216,7 +216,9 @@ export default class Wishes extends React.Component{
                 </div>
                
                </div>
+               <div className="foot">
                <Footer />
+               </div>
                </div>
         )
                
