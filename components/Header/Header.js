@@ -5,10 +5,11 @@ import { Link, Router } from '../../routes'
 export default class Header extends React.Component{
     render(){
         return(
-            <div className="header col-sm-12">
+            <div className="header">
             <Link route='home' params={{ slug: 'home' }}><a>Home  </a></Link>
             <Link route='tracker' params={{ slug: 'tracker' }}><a>Tracker  </a></Link>
             <Link route='wishes' params={{ slug: 'wishes' }}><a>Wishes</a></Link>
+            <Link route='about' params={{ slug: 'about' }}><a>About</a></Link>
             <style >{`
                 .header{
                     background-color: #588E95;

@@ -6,7 +6,7 @@ import { stylesheet, classNames } from '../../styles/Footer.scss'
 export default class Footer extends React.Component {
     render(){
         return(
-            <div className="footer col-sm-12">
+            <div className="footer">
                 <p>Copyright © 2017 A&#38;M</p>
                 <style jsx>{`
                 .footer{
@@ -16,8 +16,8 @@ export default class Footer extends React.Component {
                     padding: 10px 0px 10px 0px;
                     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
                     font-size: 13px;
-                    position: absolute;
                     bottom: 0;
+                    
                 }
                 p{
                     color: #fff;

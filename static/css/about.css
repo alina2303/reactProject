@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow:300,400');
-
 body{
     background: rgba(204, 217, 206, 0.1);
     font-family: 'Barlow', sans-serif;   
@@ -99,6 +97,37 @@ input{
     min-height: 600px;
 }
 
-.footer{
-    position: absolute;
+
+
+
+
+
+.list-completed {
+    background-color: #fff;
+    margin: 62px 0px 61px 0px;
+    padding: 30px;
+    list-style: none;
+    max-width: 600px;
+    margin: 60px auto;
+}
+.questions-list-question {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 5px;
+    background-color: #eee;
+    font-size: 20px;
+}
+.questions-list-answer {
+    font-size: 15px;
+}
+.questions-list-item {
+    max-height: 43px;
+    overflow: hidden;
+}
+.questions-list-item.opened {
+    max-height: 100%;
+    
+}
+.content-holder {
+    min-height: 600px;
 }
