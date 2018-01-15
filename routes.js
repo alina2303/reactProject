@@ -5,5 +5,5 @@ const routes = module.exports = nextRoutes()
 routes.add('home', '/')
 routes.add('tracker', '/tracker')
 routes.add('wishes', '/wishes')
-routes.add('about', '/about')
+routes.add('faq', '/faq')
 

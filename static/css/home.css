@@ -3,7 +3,7 @@
     margin: 20px;
   }
   .content-holder {
-    min-height: 95vh;
+    min-height: 600px;
     background-color: #e6e6e6;
     background: url('../../static/backgrounds/img/money.jpg');
     background-size:cover;

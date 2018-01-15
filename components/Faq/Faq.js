@@ -8,23 +8,29 @@ import index from 'next/dist/lib/router';
 
 const questions = [
   {
-    question: "How can I?",
-    answer: "I can"
+    question: "1. Why the tracker does not calculate balance?",
+    answer: "First of all check if you filled in all the fields. If yes then refresh the page and try again. "
      
   },
   {
-    question: "How can I?",
-    answer: "I can"
+    question: "2. How can I add a wish to my list of wishes?",
+    answer: "There is a blue button at the left top corner. Press that button, fill in all the fields and press button 'Add'. Close the form. "
+     
+  },
+
+  {
+    question: "3. What is 'hourly wage'",
+    answer: "Amount of money you earn per hour."
      
   },
   {
-    question: "How can I?",
-    answer: "I can"
+    question: "4. How do I add a picture while creating a new wish?",
+    answer: "You can copy a link to the picture and paste in into the field."
      
-  }
+  },
 ]
 
-export default class About extends React.Component{
+export default class Faq extends React.Component{
       constructor () {
         super()
         this.renderFaq = this.renderFaq.bind(this);
@@ -69,8 +75,12 @@ export default class About extends React.Component{
             </Head>
             <Header />
               <div className="content-holder">
+                <div className="questions-holder">
+                <h2>Here you can find the most asking questions</h2> 
                 <ul className="list-completed">{this.renderFaq()}</ul>
+                <h4>If you could not find what you were looking for, feel free to contact us on social media</h4>
               </div>
+            </div>
             </div>
               <Footer /> 
         </div>

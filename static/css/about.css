@@ -104,11 +104,11 @@ input{
 
 .list-completed {
     background-color: #fff;
-    margin: 62px 0px 61px 0px;
+    margin: 0px 0px 61px 0px;
     padding: 30px;
     list-style: none;
-    max-width: 600px;
-    margin: 60px auto;
+    max-width: 800px;
+    margin: 0px auto;
 }
 .questions-list-question {
     border: 1px solid #ccc;
@@ -116,9 +116,11 @@ input{
     padding: 5px;
     background-color: #eee;
     font-size: 20px;
+    cursor: pointer;
 }
 .questions-list-answer {
-    font-size: 15px;
+    font-size: 17px;
+    padding: 10px;
 }
 .questions-list-item {
     max-height: 43px;
@@ -130,4 +132,25 @@ input{
 }
 .content-holder {
     min-height: 600px;
+}
+h2 {
+    font-family: Comic Sans MS, CenturyGothic, AppleGothic, sans-serif;
+    color:#04223c;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    
+  }
+  .questions-holder {
+    background-color: #fff;
+    max-width: 900px;
+    margin: 60px auto;
+}
+
+h4 {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 23px;
+    font-style: italic;
 }
