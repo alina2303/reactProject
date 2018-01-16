@@ -1,0 +1,23 @@
+.header{
+    background-color: #588E95;
+    text-align: left;
+    padding: 20px 0px 20px 0px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+a {
+    color: white;
+}
+.header a {
+    font-size: 15px;
+    text-decoration: none;
+    padding: 20px;
+
+}
+.header a:hover {
+   background-color: #006666;
+   color: #000;
+
+}
+.fa.fa-home {
+  font-size: 23px;
+}
