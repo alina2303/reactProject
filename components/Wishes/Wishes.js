@@ -204,7 +204,7 @@ export default class Wishes extends React.Component{
                   </div>
                 )}
                 <h2>
-                  Your list of wishes
+                Your list of wishes
                 </h2>
                 
                 <div className="container">
@@ -216,9 +216,9 @@ export default class Wishes extends React.Component{
                 </div>
                
                </div>
-               <div className="foot">
+               
                <Footer />
-               </div>
+              
                </div>
         )
                

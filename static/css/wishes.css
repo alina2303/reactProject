@@ -6,7 +6,7 @@
   .content-holder {
     min-height: 100%;
     background-color: #e6e6e6;
-    background: url('../../static/backgrounds/img/money.jpg');
+    background: url('../../static/backgrounds/img/cash.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -125,4 +125,52 @@
   .price{
       float: right;
       color: green;
+  }
+
+  .tool-tip-holder {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align:  middle;
+    z-index: 5;
+    pointer-events: initial;
+    cursor: pointer;
+  }
+  
+   .tool-tip-holder {
+    overflow: initial;
+  }
+  .tool-tip-holder .tool-tip {
+    display: inline-block;
+    position: absolute;
+    background: #e63900;
+    color: #fff;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 13px;
+    min-width: 170px;
+    line-height: 15px;
+    top: 33px;
+    left: 0;
+    background: #e63900;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(248,80,50,1) 0%, rgba(230,57,0,1) 65%, rgba(246,41,12,1) 83%, rgba(240,47,23,1) 91%, rgba(231,56,39,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(248,80,50,1)), color-stop(65%, rgba(230,57,0,1)), color-stop(83%, rgba(246,41,12,1)), color-stop(91%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(248,80,50,1) 0%, rgba(230,57,0,1) 65%, rgba(246,41,12,1) 83%, rgba(240,47,23,1) 91%, rgba(231,56,39,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(248,80,50,1) 0%, rgba(230,57,0,1) 65%, rgba(246,41,12,1) 83%, rgba(240,47,23,1) 91%, rgba(231,56,39,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(248,80,50,1) 0%, rgba(230,57,0,1) 65%, rgba(246,41,12,1) 83%, rgba(240,47,23,1) 91%, rgba(231,56,39,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(248,80,50,1) 0%, rgba(230,57,0,1) 65%, rgba(246,41,12,1) 83%, rgba(240,47,23,1) 91%, rgba(231,56,39,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
+  }
+  
+  .tool-tip-holder .tool-tip:before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: 14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 3.5px 10px 3.5px;
+    border-color: transparent transparent #e63900 transparent;
+  
   }

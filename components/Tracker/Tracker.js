@@ -227,7 +227,7 @@ render(){
     </form>
     </div>
     <div className="col-sm-6 ">
-    <div className="border">
+    <div className="border top-wish">
     <p className="wishes">Top Wishes </p>
       <div className="container">
         <div className="row">
