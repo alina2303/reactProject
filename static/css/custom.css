@@ -36,6 +36,14 @@ input::-webkit-inner-spin-button {
 
 }
 
+.tracker{
+    text-align: center;
+    border-bottom: solid black 2px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0A1829;
+}
+
 label{
     padding-right: 1%;
     color: #0A1829;
@@ -87,4 +95,37 @@ input{
     color: gray;
     font-weight: 100;
     
+  }
+
+  .col-md-12{
+      padding-bottom: 11px;
+  }
+  .card{
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  h1.aboutush{
+      text-align: center;
+      text-decoration: underline;
+    }
+  p.aboutusp{
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+  .aboutbody{
+      background-color:#F6EDD3!important;
+  }
+
+  p.contact{
+      font-size: 20px;
+      text-align: center;
+      font-weight: 600;
+  }
+
+  p.contactp{
+    text-align: center;
+
   }

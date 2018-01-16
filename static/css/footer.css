@@ -1,0 +1,31 @@
+
+.hrstyle{
+    width: 60px;
+    background-color: #588E95;
+}
+
+footer{
+    background-color: #0A1829;
+    color: white;
+}
+
+.copy{
+    text-align: center;
+}
+
+.page-footer{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    line-height: 1!important;
+}
+h6{
+    font-size: 14px!important;
+
+}
+.mx-auto{
+    font-size: 12px!important;
+    line-height: 70%!important;
+}
+.app{
+    font-size: 12px!important;
+}

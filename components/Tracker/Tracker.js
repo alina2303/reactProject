@@ -8,6 +8,7 @@ import { SingleDatePicker } from 'react-dates'
 import Moment from 'moment'
 import TimeInput from 'react-time-input'
 import { isInclusivelyBeforeDay } from 'react-dates';
+
 //import som from '../../static/css'
 
 class Tracker extends React.Component{
@@ -161,6 +162,8 @@ render(){
     <div className="row">
     <div className="col-sm-6">
     <form onSubmit={this.add()} className="border">
+    <div className="tracker"><strong>Tracker</strong></div>
+    <br/>
     <div className="calendar">
     <label>Start date: </label>
     <br />
@@ -205,7 +208,7 @@ render(){
     <input type="number" onChange={e => this.setState({Rate: e.target.value})} placeholder="Rate" />
     */}
     <br />
-    <label>Hourly wage: </label>
+    <label>Hourly wage:* </label>
     <div className="input-group">
     <span className="input-group-addon">€</span>
     <input type="text" className="form-control" onChange={this.handleRateChange} placeholder="12.50" />
@@ -217,6 +220,10 @@ render(){
     <input type="number" readOnly className="form-control" value={parseFloat(Math.round(this.state.earnings * 1000) / 1000).toFixed(4)} />
     </div>
     <br />
+    <h5>How it works?</h5>
+    <p>Calculated value is based on the values you input into each field. For example if your shift starts at 10:00am and ends at 16:00pm when your hourly wage is 10€, and you select only one day from calendar, result will be 60€</p>
+    <p>If you want to see the live calculation, you have to get back during your shift.</p>
+    <p>*When using decimal number in hourly wage field, always use dot. (i.e. 7.50)</p>
     </form>
     </div>
     <div className="col-sm-6 ">
@@ -224,8 +231,29 @@ render(){
     <p className="wishes">Top Wishes </p>
       <div className="container">
         <div className="row">
-
           <div className="col-md-12">
+              <div className="card sb-card">
+                    <a className="sb-img">
+                      <img className="card-img-top" src='https://burst.shopifycdn.com/photos/ocean-waves-kites-surfing_373x@2x.jpg' alt="My wish"/>
+                    </a>
+                    <div className="card-body download-links">
+                      <ul className="list-inline m-0">
+                        <li className="list-inline-item name">
+                          <span>
+                          Surfing in Australia for 2 weeks
+                          </span>
+                        </li>
+                        <li className="list-inline-item price" >
+                          <span >
+                            €2000
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-12">
               <div className="card sb-card">
                     <a className="sb-img">
                       <img className="card-img-top" src='https://burst.shopifycdn.com/photos/snow-boarder-on-snowy-mountain_373x@2x.jpg' alt="My wish"/>
