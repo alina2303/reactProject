@@ -6,4 +6,6 @@ routes.add('home', '/')
 routes.add('tracker', '/tracker')
 routes.add('wishes', '/wishes')
 routes.add('faq', '/faq')
+routes.add('about', '/about')
+
 

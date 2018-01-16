@@ -18,6 +18,9 @@ footer{
     padding-bottom: 1%;
     line-height: 1!important;
 }
+.page-footer a{
+    color: white;
+}
 h6{
     font-size: 14px!important;
 

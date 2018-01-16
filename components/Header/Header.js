@@ -16,6 +16,7 @@ export default class Header extends React.Component{
             <Link route='tracker' params={{ slug: 'tracker' }}><a>Tracker</a></Link>
             <Link route='wishes' params={{ slug: 'wishes' }}><a>Wishes</a></Link>
             <Link route='faq' params={{ slug: 'faq' }}><a>FAQ</a></Link>
+            <Link route='about' params={{ slug: 'about' }}><a>About us</a></Link>
             </div>
             </div>
             
