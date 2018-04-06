@@ -116,12 +116,16 @@ input{
     margin: 0 auto;
 }
 .col-md-12{
-    padding-bottom: 11px;
+    padding-bottom: 52px;
+}
+
+.col-md-12.add{
+    padding-top: 15px;
 }
 
 h1.aboutush{
     text-align: center;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   p.aboutusp{
@@ -142,5 +146,10 @@ h1.aboutush{
 
   p.contactp{
     text-align: center;
+
+  }
+
+  span{
+    font-size: 19px;
 
   }

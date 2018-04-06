@@ -76,9 +76,9 @@ export default class Faq extends React.Component{
             <Header />
               <div className="content-holder">
                 <div className="questions-holder">
-                <h2>Here you can find the most asking questions</h2> 
+                <h2>Frequently Asked Questions</h2> 
                 <ul className="list-completed">{this.renderFaq()}</ul>
-                <h4>If you could not find what you were looking for, feel free to contact us on social media</h4>
+                <h4>If you could not find what you were looking for, feel free to contact us via email</h4>
               </div>
             </div>
             </div>

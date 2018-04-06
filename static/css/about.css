@@ -134,7 +134,7 @@ input{
     min-height: 600px;
 }
 h2 {
-    font-family: Comic Sans MS, CenturyGothic, AppleGothic, sans-serif;
+    font-family: 'Barlow',  sans-serif;
     color:#04223c;
     font-size: 25px;
     text-align: center;

@@ -231,7 +231,7 @@ render(){
     <p className="wishes">Top Wishes </p>
       <div className="container">
         <div className="row">
-          <div className="col-md-12">
+          <div className="col-md-12 add">
               <div className="card sb-card">
                     <a className="sb-img">
                       <img className="card-img-top" src='https://burst.shopifycdn.com/photos/ocean-waves-kites-surfing_373x@2x.jpg' alt="My wish"/>
